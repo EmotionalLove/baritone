@@ -336,6 +336,7 @@ public class BuilderProcess extends BaritoneProcessHelper implements IBuilderPro
                     }
                 }
             }
+            incorrectPositions.removeIf(loc -> loc.distanceSq(ctx.playerFeet()) > 200);
         }
 
 
