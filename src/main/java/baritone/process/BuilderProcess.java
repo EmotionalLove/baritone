@@ -354,9 +354,9 @@ public class BuilderProcess extends BaritoneProcessHelper implements IBuilderPro
     public boolean recalc(BuilderCalculationContext bcc) {
         if (incorrectPositions == null) {
             incorrectPositions = new HashSet<>();
-            fullRecalc(bcc);
+            //fullRecalc(bcc);
             if (incorrectPositions.isEmpty()) {
-                return false;
+                //return false;
             }
         }
         recalcNearby(bcc);
